@@ -19,10 +19,10 @@ plt.imshow(image_rgb)
 # plt.show()
 
 # Mengatur konfigurasi Azure Custom Vision
-PREDICTION_KEY = "ee4cd0db4c434a1eaaa9470fc713ed02"
-ENDPOINT = "https://customvisionfly-prediction.cognitiveservices.azure.com/"
-PROJECT_ID = "39b34e7d-e766-470c-91cb-a2c96a7c4a2e"
-ITERATION_NAME = "test"
+PREDICTION_KEY = "83df174fb5154434bc8182e36c64557a"
+ENDPOINT = "https://customvisionparkingcapstone.cognitiveservices.azure.com/"
+PROJECT_ID = "c5a63700-11ed-4276-9286-ae4929df25d3"
+ITERATION_NAME = "parking"
 credentials = ApiKeyCredentials(in_headers={"Prediction-key": PREDICTION_KEY })
 predictor = CustomVisionPredictionClient(ENDPOINT, credentials)
 
