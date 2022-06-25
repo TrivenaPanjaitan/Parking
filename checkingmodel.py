@@ -19,12 +19,12 @@ plt.imshow(image_rgb)
 # plt.show()
 
 # Mengatur konfigurasi Azure Custom Vision
-PREDICTION_KEY = "83df174fb5154434bc8182e36c64557a"
-ENDPOINT = "https://customvisionparkingcapstone.cognitiveservices.azure.com/"
+PREDICTION_KEY = "ac231faf8fd9484ba00da64549011600"
+ENDPOINT = "https://customvisionparkingcapstone-prediction.cognitiveservices.azure.com"
 PROJECT_ID = "c5a63700-11ed-4276-9286-ae4929df25d3"
-ITERATION_NAME = "parking"
+ITERATION_NAME = "Parking"
 credentials = ApiKeyCredentials(in_headers={"Prediction-key": PREDICTION_KEY })
-predictor = CustomVisionPredictionClient(ENDPOINT, credentials)
+predictor = CustomVisionPredictionClient(ENDPOINT, credentials) 
 
 # Kordinat Untuk Lahan Parkir dan Konfigurasi Warna
 zone1_x1 = 60
@@ -126,4 +126,3 @@ print("\nJumlah Kendaraan yang Tidak Parkir = ", nb_vehicles_NA)
 from IPython.display import Image
 sample_image = 'gambar/hasil.jpg'
 Image(filename=sample_image) 
-
